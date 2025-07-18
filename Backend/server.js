@@ -25,4 +25,4 @@ catch(e){
 app.get("/",(req,res)=>res.send("server is live"));
 app.use("/api/inngest", serve({ client: inngest, functions }));
 
-app.listen(port,()=> console.log(`server listening at http://localhost:${port}`))
+export default app;
